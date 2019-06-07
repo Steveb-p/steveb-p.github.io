@@ -3,36 +3,33 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    name: Paweł Niedzielski
+    tagline: Programista PHP/React/NodeJS
+    avatar: avatar.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
+    email: pawel@niedzielski.biz.pl
+    phone: 506 945 424
     website: blog.webjeda.com #do not add http://
     linkedin: alandoe
-    github: sharu725
-    gitlab:
+    github: steveb-p
+    gitlab: steveb
     bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    twitter:
+    stack-overflow: 2424641/steveb # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
     languages:
-      - idiom: English
+      - idiom: Polish
         level: Native
 
-      - idiom: French
-        level: Professional
-
-      - idiom: Spanish
-        level: Professional
+      - idiom: English
+        level: Professional (B2)
 
     interests:
       - item: Climbing
@@ -84,25 +81,27 @@ education:
 
 experiences:
     - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+      time: 06.2016 - Present
+      company: Intredo
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
+        Hired to maintain and eventually replace an application for business intelligence written
+        in CodeIgniter framework, I have quickly started migrating it to Symfony / Doctrine step by step,
+        without losing any of the existing functionalities and sparing company the costs associated with
+        complete rewrite. Introduced automatic testing and continous integration by using PHPUnit and Gitlab CI,
+        as well as Jest for NodeJS-based microservices (which I also migrated from ActionHero / NodeJS 0.10 to
+        KoaJS / latest Node when I felt familiar enough with their features). Incrementally improved event processing
+        pipeline and allowed it to scale. Introduced zero downtime deploys. Set up monitoring and error reporting
+        systems (InfluxDB, Sentry)
 
-          - Bullet point
-          - Bullet point
+          - Migrated legacy app to Symfony / Doctrinee
+          - Introduced testing / CI
+          - Provided support to other teams (IT and non-IT)
+          - Created scalable tasks / processes
+          - Other technologies used: MongoDB, MySQL, websockets, TypeScript
 
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+    - role: PHP Developer
+      time: 2013 - 2016
+      company: TravelTech
       details: |
         Describe your role here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -134,13 +133,13 @@ projects:
       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
 
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: php/enqueue
+        link: "https://php-enqueue.github.io/"
+        tagline: "Enqueue is a library for intra- and inter-app communication, allowing sending events and commands"
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: phprdkafka
+        link: "https://github.com/arnaud-lb/php-rdkafka"
+        tagline: "A wrapper php extension for librdkafka, allowing PHP to communicate with Kafka brokers"
 
       - title: Tempo
         link: "#"
@@ -154,46 +153,58 @@ projects:
         link: "#"
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-
-    papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
-
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+#publications:
+#    title: Publications
+#    intro: |
+#      You can list your publications in this section. Lorem ipsum dolor sit
+#      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#      bibendum fringilla a eu lectus.
+#
+#    papers:
+#      - title: The Art of Computer Programming
+#        authors: Donald E. Knuth
+#        conference: Addison-Wesley, 1968
+#
+#      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#
+#      - title: A syntax directed compiler for Algol 60
+#        authors: Edgar T. Irons
+#        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: PHP
+        level: 100%
 
       - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
         level: 95%
 
-      - name: Ruby on Rails
+      - name: React
         level: 85%
 
-      - name: Sketch & Photoshop
+      - name: Redux
+        level: 70%
+
+      - name: NodeJS
+        level: 80%
+
+      - name: Docker
+        level: 90%
+
+      - name: MongoDB
+        level: 80%
+
+      - name: Socket.io / Websockets
+        level: 80%
+
+      - name: Redis
+        level: 60%
+
+      - name: Kafka
         level: 60%
 
 footer: >
